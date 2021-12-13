@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--OnboardingVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="OnboardingVC" customModule="Prifina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kgP-2b-eIi">
+                                <rect key="frame" x="0.0" y="44" width="414" height="703"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="1qa-1Y-PEj">
+                                    <size key="itemSize" width="278" height="524"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="OnboardingCollectionViewCell" id="5Bm-ba-0se" customClass="OnboardingCollectionViewCell" customModule="Prifina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="89.5" width="278" height="524"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="V7L-sM-C6n">
+                                            <rect key="frame" x="0.0" y="0.0" width="278" height="524"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laptopLady" translatesAutoresizingMaskIntoConstraints="NO" id="Evw-ZG-Q1B">
+                                                    <rect key="frame" x="15" y="10" width="248" height="248"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Evw-ZG-Q1B" secondAttribute="height" multiplier="1:1" id="Lhg-UL-qS9"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ctf-yS-PCy" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="293" width="238" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Description " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oIP-mb-SMc" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="338.5" width="238" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oIP-mb-SMc" firstAttribute="top" secondItem="Ctf-yS-PCy" secondAttribute="bottom" constant="25" id="3v7-lt-Un6"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="oIP-mb-SMc" secondAttribute="bottom" constant="10" id="4qf-OY-gxx"/>
+                                                <constraint firstItem="Ctf-yS-PCy" firstAttribute="top" secondItem="Evw-ZG-Q1B" secondAttribute="bottom" constant="35" id="9L7-47-qSS"/>
+                                                <constraint firstItem="Evw-ZG-Q1B" firstAttribute="centerX" secondItem="V7L-sM-C6n" secondAttribute="centerX" id="Uxd-yp-hFI"/>
+                                                <constraint firstItem="Evw-ZG-Q1B" firstAttribute="top" secondItem="V7L-sM-C6n" secondAttribute="top" constant="10" id="amq-R5-1wh"/>
+                                                <constraint firstAttribute="trailing" secondItem="oIP-mb-SMc" secondAttribute="trailing" constant="20" id="fLC-IR-dvl"/>
+                                                <constraint firstItem="oIP-mb-SMc" firstAttribute="leading" secondItem="V7L-sM-C6n" secondAttribute="leading" constant="20" id="hn2-Tr-mz9"/>
+                                                <constraint firstItem="Ctf-yS-PCy" firstAttribute="leading" secondItem="V7L-sM-C6n" secondAttribute="leading" constant="20" id="i3O-cu-f9s"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ctf-yS-PCy" secondAttribute="trailing" constant="20" id="nSe-fe-dgV"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="278" height="524"/>
+                                        <connections>
+                                            <outlet property="descriptionLabel" destination="oIP-mb-SMc" id="fMM-da-EKe"/>
+                                            <outlet property="featureImageView" destination="Evw-ZG-Q1B" id="ETc-3V-KUy"/>
+                                            <outlet property="titleLabel" destination="Ctf-yS-PCy" id="lAg-hm-kgc"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="HFa-aL-Z98">
+                                <rect key="frame" x="129" y="830" width="156" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="EKG-dj-Ucr"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" systemColor="systemGray5Color"/>
+                                <color key="currentPageIndicatorTintColor" systemColor="systemGray2Color"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VIL-de-bN0" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="140" y="771" width="134" height="35"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="134" id="m18-7T-3Xb"/>
+                                    <constraint firstAttribute="height" constant="35" id="oAb-zh-o4c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="nextButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DJb-Tf-dfe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kgP-2b-eIi" secondAttribute="trailing" id="BQp-qW-2Yb"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="HFa-aL-Z98" secondAttribute="bottom" constant="20" id="D44-Hu-DtT"/>
+                            <constraint firstItem="HFa-aL-Z98" firstAttribute="centerX" secondItem="kgP-2b-eIi" secondAttribute="centerX" id="Nxm-1g-2AR"/>
+                            <constraint firstItem="kgP-2b-eIi" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="SUZ-kl-RnX"/>
+                            <constraint firstItem="VIL-de-bN0" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="UoP-CC-bLd"/>
+                            <constraint firstItem="HFa-aL-Z98" firstAttribute="top" secondItem="VIL-de-bN0" secondAttribute="bottom" constant="24" id="YQa-WA-RLp"/>
+                            <constraint firstItem="VIL-de-bN0" firstAttribute="top" secondItem="kgP-2b-eIi" secondAttribute="bottom" constant="24" id="am2-GO-qlI"/>
+                            <constraint firstItem="kgP-2b-eIi" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="fF8-wA-pTf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="featurePageControl" destination="HFa-aL-Z98" id="3cm-YQ-cr4"/>
+                        <outlet property="featuresCollectionView" destination="kgP-2b-eIi" id="5Lw-cL-Zv5"/>
+                        <outlet property="nextButton" destination="VIL-de-bN0" id="vCM-2G-FQZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="43.526785714285715"/>
+        </scene>
+        <!--Sign InVC-->
+        <scene sceneID="6lX-AI-5En">
+            <objects>
+                <viewController storyboardIdentifier="SignInVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="39Q-Xc-YnW" customClass="SignInVC" customModule="Prifina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oXH-DJ-0GZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudMan" translatesAutoresizingMaskIntoConstraints="NO" id="ugg-j4-QBK">
+                                <rect key="frame" x="98" y="74" width="218" height="163.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ugg-j4-QBK" secondAttribute="height" multiplier="4:3" id="way-e7-Qrk"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ayw-ka-eeO" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="20" y="248.5" width="374" height="41"/>
+                                <string key="text">Welcome to your personal
+data cloud </string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="7u4-Zc-Scy">
+                                <rect key="frame" x="75" y="319.5" width="264" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0aW-Xg-8ec" customClass="PrifinaTextField" customModule="Prifina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="264" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="XEr-rE-asD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hog-OL-CGm" customClass="PrifinaTextField" customModule="Prifina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="67" width="264" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6p1-op-7j7" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="76" y="453.5" width="262" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="dYK-eT-gdQ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sign in "/>
+                                <connections>
+                                    <action selector="signInButtonAction:" destination="39Q-Xc-YnW" eventType="touchUpInside" id="Obx-7l-ElP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iBR-1W-5qy" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="184.5" y="531.5" width="45" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="D43-Hy-dr9"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sign up ">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="signUpButtonAction:" destination="39Q-Xc-YnW" eventType="touchUpInside" id="iRi-vB-4rd"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don’t have an account? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eDz-c7-TdV" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="115.5" y="516.5" width="183" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="c70-uy-aGp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VKU-wU-7FK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7u4-Zc-Scy" firstAttribute="leading" secondItem="VKU-wU-7FK" secondAttribute="leading" constant="75" id="2Or-9x-Nad"/>
+                            <constraint firstItem="ayw-ka-eeO" firstAttribute="top" secondItem="ugg-j4-QBK" secondAttribute="bottom" constant="11" id="9hp-5F-YJF"/>
+                            <constraint firstItem="eDz-c7-TdV" firstAttribute="top" secondItem="6p1-op-7j7" secondAttribute="bottom" constant="28" id="C7T-1s-y0M"/>
+                            <constraint firstItem="iBR-1W-5qy" firstAttribute="centerX" secondItem="eDz-c7-TdV" secondAttribute="centerX" id="HJe-PK-1Uy"/>
+                            <constraint firstItem="ayw-ka-eeO" firstAttribute="leading" secondItem="VKU-wU-7FK" secondAttribute="leading" constant="20" id="NpS-Px-MUo"/>
+                            <constraint firstItem="ugg-j4-QBK" firstAttribute="top" secondItem="VKU-wU-7FK" secondAttribute="top" constant="30" id="OjQ-ej-zAK"/>
+                            <constraint firstItem="VKU-wU-7FK" firstAttribute="trailing" secondItem="7u4-Zc-Scy" secondAttribute="trailing" constant="75" id="Zuu-PK-K0M"/>
+                            <constraint firstItem="6p1-op-7j7" firstAttribute="trailing" secondItem="7u4-Zc-Scy" secondAttribute="trailing" constant="-1" id="a15-A6-ISk"/>
+                            <constraint firstItem="6p1-op-7j7" firstAttribute="leading" secondItem="7u4-Zc-Scy" secondAttribute="leading" constant="1" id="aIn-FN-Tx0"/>
+                            <constraint firstItem="eDz-c7-TdV" firstAttribute="centerX" secondItem="6p1-op-7j7" secondAttribute="centerX" id="bhM-tp-aK7"/>
+                            <constraint firstItem="7u4-Zc-Scy" firstAttribute="top" secondItem="ayw-ka-eeO" secondAttribute="bottom" constant="30" id="gB1-TW-AyF"/>
+                            <constraint firstItem="iBR-1W-5qy" firstAttribute="top" secondItem="eDz-c7-TdV" secondAttribute="bottom" id="mgh-oF-MZr"/>
+                            <constraint firstItem="6p1-op-7j7" firstAttribute="top" secondItem="7u4-Zc-Scy" secondAttribute="bottom" constant="34" id="oJG-XF-0tg"/>
+                            <constraint firstItem="ugg-j4-QBK" firstAttribute="centerX" secondItem="VKU-wU-7FK" secondAttribute="centerX" id="rlo-1g-Ve6"/>
+                            <constraint firstItem="VKU-wU-7FK" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iBR-1W-5qy" secondAttribute="bottom" constant="20" id="ssL-0h-TiP"/>
+                            <constraint firstItem="VKU-wU-7FK" firstAttribute="trailing" secondItem="ayw-ka-eeO" secondAttribute="trailing" constant="20" id="vwG-5V-k2s"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dontHaveAccLabel" destination="eDz-c7-TdV" id="eXv-2b-hXP"/>
+                        <outlet property="passwordTextField" destination="hog-OL-CGm" id="cvE-sI-VSd"/>
+                        <outlet property="signInButton" destination="6p1-op-7j7" id="pQp-3u-0nI"/>
+                        <outlet property="singUpButton" destination="iBR-1W-5qy" id="e90-UJ-mSK"/>
+                        <outlet property="titleLabel" destination="ayw-ka-eeO" id="LUm-mF-LXp"/>
+                        <outlet property="usernameTextField" destination="0aW-Xg-8ec" id="Xcw-cc-nRu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ctx-Lj-jHF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="44"/>
+        </scene>
+        <!--Sign Up View Controller-->
+        <scene sceneID="40i-El-ncI">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8gy-YB-iuX" customClass="SignUpViewController" customModule="Prifina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eFy-uU-cbD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signUpBro" translatesAutoresizingMaskIntoConstraints="NO" id="R05-zX-I7w">
+                                <rect key="frame" x="113.5" y="94" width="187" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="R05-zX-I7w" secondAttribute="height" multiplier="4:3" id="ecq-y1-4u7"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="signUpIcon" translatesAutoresizingMaskIntoConstraints="NO" id="crs-nR-cR5">
+                                <rect key="frame" x="225.5" y="74" width="55" height="53"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create your account " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBG-8A-2pv" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="20" y="245" width="374" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="XJl-9F-V13"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="CPe-fv-Nij">
+                                <rect key="frame" x="75" y="300" width="264" height="234"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdN-EP-Fww" customClass="PrifinaTextField" customModule="Prifina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="264" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="pLq-0s-Yia"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="09A-fN-yEJ" customClass="PrifinaTextField" customModule="Prifina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="67" width="264" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="H9T-gc-byG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZjA-Rv-VXC" customClass="PrifinaTextField" customModule="Prifina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="134" width="264" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="sxo-ss-COY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YcH-og-2r0" customClass="PrifinaTextField" customModule="Prifina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="201" width="264" height="33"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDV-fv-YGN" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="76" y="568" width="262" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="cNm-by-SYz"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Sign up "/>
+                                <connections>
+                                    <action selector="signUpButtonAction:" destination="8gy-YB-iuX" eventType="touchUpInside" id="ICp-X4-dv5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="y4I-sx-yAw" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="186.5" y="646" width="41" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Q41-Ju-kx7"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sign in ">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="signInButtonAction:" destination="8gy-YB-iuX" eventType="touchUpInside" id="S1U-6O-yba"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxh-uY-qPp" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="107.5" y="631" width="199.5" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="8Vh-GU-ei5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qZx-Mk-aUX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="oDV-fv-YGN" firstAttribute="leading" secondItem="CPe-fv-Nij" secondAttribute="leading" constant="1" id="1ih-yf-5nU"/>
+                            <constraint firstItem="qZx-Mk-aUX" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="y4I-sx-yAw" secondAttribute="bottom" constant="20" id="28q-e0-xzG"/>
+                            <constraint firstItem="zBG-8A-2pv" firstAttribute="top" secondItem="R05-zX-I7w" secondAttribute="bottom" constant="11" id="87m-GY-VDk"/>
+                            <constraint firstItem="qZx-Mk-aUX" firstAttribute="trailing" secondItem="CPe-fv-Nij" secondAttribute="trailing" constant="75" id="BHE-N2-wxY"/>
+                            <constraint firstItem="crs-nR-cR5" firstAttribute="top" secondItem="R05-zX-I7w" secondAttribute="top" constant="-20" id="CN5-W7-is8"/>
+                            <constraint firstItem="CPe-fv-Nij" firstAttribute="leading" secondItem="qZx-Mk-aUX" secondAttribute="leading" constant="75" id="Fp3-bo-2wE"/>
+                            <constraint firstItem="R05-zX-I7w" firstAttribute="top" secondItem="qZx-Mk-aUX" secondAttribute="top" constant="50" id="Ha2-DL-Vci"/>
+                            <constraint firstItem="crs-nR-cR5" firstAttribute="trailing" secondItem="R05-zX-I7w" secondAttribute="trailing" constant="-20" id="ICO-bP-uRa"/>
+                            <constraint firstItem="zBG-8A-2pv" firstAttribute="leading" secondItem="qZx-Mk-aUX" secondAttribute="leading" constant="20" id="UGk-LA-noe"/>
+                            <constraint firstItem="bxh-uY-qPp" firstAttribute="centerX" secondItem="oDV-fv-YGN" secondAttribute="centerX" id="V1Y-O5-k4C"/>
+                            <constraint firstItem="oDV-fv-YGN" firstAttribute="top" secondItem="CPe-fv-Nij" secondAttribute="bottom" constant="34" id="Yhg-qE-hkc"/>
+                            <constraint firstItem="y4I-sx-yAw" firstAttribute="centerX" secondItem="bxh-uY-qPp" secondAttribute="centerX" id="agd-dq-NHw"/>
+                            <constraint firstItem="CPe-fv-Nij" firstAttribute="top" secondItem="zBG-8A-2pv" secondAttribute="bottom" constant="30" id="cpU-Ng-7qX"/>
+                            <constraint firstItem="oDV-fv-YGN" firstAttribute="trailing" secondItem="CPe-fv-Nij" secondAttribute="trailing" constant="-1" id="erQ-Xd-620"/>
+                            <constraint firstItem="R05-zX-I7w" firstAttribute="centerX" secondItem="qZx-Mk-aUX" secondAttribute="centerX" id="hdZ-gJ-Xp6"/>
+                            <constraint firstItem="y4I-sx-yAw" firstAttribute="top" secondItem="bxh-uY-qPp" secondAttribute="bottom" id="iRG-81-jwM"/>
+                            <constraint firstItem="qZx-Mk-aUX" firstAttribute="trailing" secondItem="zBG-8A-2pv" secondAttribute="trailing" constant="20" id="xZ2-gO-ZNJ"/>
+                            <constraint firstItem="bxh-uY-qPp" firstAttribute="top" secondItem="oDV-fv-YGN" secondAttribute="bottom" constant="28" id="yic-wl-FXF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alreadyHaveAccLabel" destination="bxh-uY-qPp" id="ccm-ZC-oL8"/>
+                        <outlet property="emailTextField" destination="09A-fN-yEJ" id="an8-0g-pMQ"/>
+                        <outlet property="passwordTextField" destination="YcH-og-2r0" id="bVX-2m-BR8"/>
+                        <outlet property="phoneNumberTextField" destination="ZjA-Rv-VXC" id="XDx-Yi-am9"/>
+                        <outlet property="signInButton" destination="y4I-sx-yAw" id="U4E-nn-TKv"/>
+                        <outlet property="singUpButton" destination="oDV-fv-YGN" id="Qoz-sx-rv3"/>
+                        <outlet property="titleLabel" destination="zBG-8A-2pv" id="wUk-c7-QZv"/>
+                        <outlet property="usernameTextField" destination="gdN-EP-Fww" id="7xN-8P-aKq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xa8-Dc-ReT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="811.59420289855075" y="719.86607142857144"/>
+        </scene>
+        <!--Enter Verification View Controller-->
+        <scene sceneID="K21-IG-nfe">
+            <objects>
+                <viewController storyboardIdentifier="EnterVerificationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yqi-BH-scb" customClass="EnterVerificationViewController" customModule="Prifina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HlE-6R-WAf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" translatesAutoresizingMaskIntoConstraints="NO" id="GYc-6M-SOX">
+                                <rect key="frame" x="154.5" y="94" width="105" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GYc-6M-SOX" secondAttribute="height" multiplier="1:1" id="16k-i2-fuM"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We have sent you a verification code via SMS. Please enter the code. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQy-Fm-AiA" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="20" y="228" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="90" id="JFx-VT-vZh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEx-nQ-VVa" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="50" y="363" width="314" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="FeU-dk-ccW"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="signInButtonAction:" destination="yqi-BH-scb" eventType="touchUpInside" id="7sO-Nq-Td1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SYo-Ps-VeZ" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="159.5" y="418" width="95" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="Gd8-D7-GfN"/>
+                                    <constraint firstAttribute="width" constant="95" id="I2f-W8-MK2"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Resend code">
+                                            <attributes>
+                                                <font key="NSFont" size="12" name="Helvetica"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="resendCodeAction:" destination="yqi-BH-scb" eventType="touchUpInside" id="E5f-ka-IBb"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lzl-8f-Sm8">
+                                <rect key="frame" x="67.5" y="309" width="279" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E1Q-DV-IRJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="E1Q-DV-IRJ" secondAttribute="height" multiplier="1:1" id="5cW-zd-q1n"/>
+                                            <constraint firstAttribute="width" constant="34" id="G5y-K7-OT4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Stj-Oq-Ogr">
+                                        <rect key="frame" x="49" y="0.0" width="34" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SCT-36-oRt">
+                                        <rect key="frame" x="98" y="0.0" width="34" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rld-8d-hSv">
+                                        <rect key="frame" x="147" y="0.0" width="34" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ls8-oX-ePk">
+                                        <rect key="frame" x="196" y="0.0" width="34" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4bt-fA-RSz">
+                                        <rect key="frame" x="245" y="0.0" width="34" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="2vU-gO-vrY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6lg-c9-Xpb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="GYc-6M-SOX" firstAttribute="top" secondItem="6lg-c9-Xpb" secondAttribute="top" constant="50" id="1H4-2p-x6X"/>
+                            <constraint firstItem="UEx-nQ-VVa" firstAttribute="leading" secondItem="6lg-c9-Xpb" secondAttribute="leading" constant="50" id="5vn-BQ-JYP"/>
+                            <constraint firstItem="6lg-c9-Xpb" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="SYo-Ps-VeZ" secondAttribute="bottom" constant="20" id="JQ5-If-XXL"/>
+                            <constraint firstItem="SYo-Ps-VeZ" firstAttribute="centerX" secondItem="UEx-nQ-VVa" secondAttribute="centerX" id="OBh-da-oGb"/>
+                            <constraint firstItem="lzl-8f-Sm8" firstAttribute="centerX" secondItem="6lg-c9-Xpb" secondAttribute="centerX" id="YOH-bR-hv5"/>
+                            <constraint firstItem="lzl-8f-Sm8" firstAttribute="top" secondItem="EQy-Fm-AiA" secondAttribute="bottom" constant="40" id="aKb-qr-jhl"/>
+                            <constraint firstItem="6lg-c9-Xpb" firstAttribute="trailing" secondItem="EQy-Fm-AiA" secondAttribute="trailing" constant="20" id="dIe-7z-IxL"/>
+                            <constraint firstItem="6lg-c9-Xpb" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="lzl-8f-Sm8" secondAttribute="trailing" constant="20" id="eYH-ma-9EZ"/>
+                            <constraint firstItem="SYo-Ps-VeZ" firstAttribute="top" secondItem="UEx-nQ-VVa" secondAttribute="bottom" constant="20" id="jru-Y0-Zkc"/>
+                            <constraint firstItem="EQy-Fm-AiA" firstAttribute="top" secondItem="GYc-6M-SOX" secondAttribute="bottom" constant="29" id="lTM-Te-Wzw"/>
+                            <constraint firstItem="lzl-8f-Sm8" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6lg-c9-Xpb" secondAttribute="leading" constant="20" id="nyl-RR-zZE"/>
+                            <constraint firstItem="GYc-6M-SOX" firstAttribute="centerX" secondItem="6lg-c9-Xpb" secondAttribute="centerX" id="qGk-6n-yKT"/>
+                            <constraint firstItem="EQy-Fm-AiA" firstAttribute="leading" secondItem="6lg-c9-Xpb" secondAttribute="leading" constant="20" id="v6N-OH-NUR"/>
+                            <constraint firstItem="UEx-nQ-VVa" firstAttribute="top" secondItem="lzl-8f-Sm8" secondAttribute="bottom" constant="20" id="yn6-Aq-BXu"/>
+                            <constraint firstItem="6lg-c9-Xpb" firstAttribute="trailing" secondItem="UEx-nQ-VVa" secondAttribute="trailing" constant="50" id="zHB-WQ-LpC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resendCodeButton" destination="SYo-Ps-VeZ" id="bzB-79-Bth"/>
+                        <outlet property="signInButton" destination="UEx-nQ-VVa" id="3dB-54-uXL"/>
+                        <outlet property="textFieldCode1" destination="E1Q-DV-IRJ" id="1hy-KJ-xXr"/>
+                        <outlet property="textFieldCode2" destination="Stj-Oq-Ogr" id="LGO-45-IgY"/>
+                        <outlet property="textFieldCode3" destination="SCT-36-oRt" id="UAr-Pu-TgT"/>
+                        <outlet property="textFieldCode4" destination="rld-8d-hSv" id="yEe-dx-FNe"/>
+                        <outlet property="textFieldCode5" destination="Ls8-oX-ePk" id="haM-Wd-RQa"/>
+                        <outlet property="textFieldCode6" destination="4bt-fA-RSz" id="oKl-V3-qQG"/>
+                        <outlet property="titleLabel" destination="EQy-Fm-AiA" id="YaO-aP-tOI"/>
+                        <outletCollection property="codeTextFieldArr" destination="E1Q-DV-IRJ" collectionClass="NSMutableArray" id="z4h-eD-ssM"/>
+                        <outletCollection property="codeTextFieldArr" destination="Stj-Oq-Ogr" collectionClass="NSMutableArray" id="uoj-D6-iiU"/>
+                        <outletCollection property="codeTextFieldArr" destination="SCT-36-oRt" collectionClass="NSMutableArray" id="Lz4-Q8-SfO"/>
+                        <outletCollection property="codeTextFieldArr" destination="rld-8d-hSv" collectionClass="NSMutableArray" id="ij3-CP-qLc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nY8-fM-zuH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1589.8550724637682" y="43.526785714285715"/>
+        </scene>
+        <!--Sign In Success View Controller-->
+        <scene sceneID="kuT-Sk-Ddr">
+            <objects>
+                <viewController storyboardIdentifier="SignInSuccessViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ViD-hl-CWg" customClass="SignInSuccessViewController" customModule="Prifina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L3U-gb-4KL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tickCircle" translatesAutoresizingMaskIntoConstraints="NO" id="0xy-sG-cje">
+                                <rect key="frame" x="162.5" y="94" width="89" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0xy-sG-cje" secondAttribute="height" multiplier="1:1" id="667-tF-5wS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="REZ-eY-A4J" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="20" y="225" width="374" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="90" id="mUg-pF-U70"/>
+                                </constraints>
+                                <string key="text">You have successfully signed in 
+to your account. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WXq-7H-41T" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="50" y="316" width="314" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="UeG-8j-ONV"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Explore features"/>
+                                <connections>
+                                    <action selector="exploreButtonAction:" destination="ViD-hl-CWg" eventType="touchUpInside" id="8Gc-Ry-6Qx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vb5-6n-qPZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0xy-sG-cje" firstAttribute="centerX" secondItem="vb5-6n-qPZ" secondAttribute="centerX" id="4Rz-4Z-XwZ"/>
+                            <constraint firstItem="vb5-6n-qPZ" firstAttribute="trailing" secondItem="WXq-7H-41T" secondAttribute="trailing" constant="50" id="ANt-7O-UhQ"/>
+                            <constraint firstItem="REZ-eY-A4J" firstAttribute="leading" secondItem="vb5-6n-qPZ" secondAttribute="leading" constant="20" id="BrW-zX-zrG"/>
+                            <constraint firstItem="WXq-7H-41T" firstAttribute="leading" secondItem="vb5-6n-qPZ" secondAttribute="leading" constant="50" id="EVt-AE-2mc"/>
+                            <constraint firstItem="REZ-eY-A4J" firstAttribute="top" secondItem="0xy-sG-cje" secondAttribute="bottom" constant="42" id="FgR-DQ-lbX"/>
+                            <constraint firstItem="0xy-sG-cje" firstAttribute="top" secondItem="vb5-6n-qPZ" secondAttribute="top" constant="50" id="efP-WZ-ORC"/>
+                            <constraint firstItem="vb5-6n-qPZ" firstAttribute="trailing" secondItem="REZ-eY-A4J" secondAttribute="trailing" constant="20" id="ndb-Jr-IKy"/>
+                            <constraint firstItem="WXq-7H-41T" firstAttribute="top" secondItem="REZ-eY-A4J" secondAttribute="bottom" constant="50" id="oJl-aK-JdV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exploreButton" destination="WXq-7H-41T" id="R3U-Gx-QsK"/>
+                        <outlet property="titleLabel" destination="REZ-eY-A4J" id="2GJ-yt-xlk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8w7-Jl-6Iw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2351" y="44"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cloudMan" width="218" height="156"/>
+        <image name="envelope" width="95" height="105"/>
+        <image name="laptopLady" width="248" height="212"/>
+        <image name="signUpBro" width="179" height="140"/>
+        <image name="signUpIcon" width="55" height="53"/>
+        <image name="tickCircle" width="89" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

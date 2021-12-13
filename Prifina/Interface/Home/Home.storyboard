@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="Prifina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="eV2-UD-quW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Syw-ze-aat">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="259.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laptopLady" translatesAutoresizingMaskIntoConstraints="NO" id="6v9-F3-qRI">
+                                                <rect key="frame" x="140.5" y="0.0" width="133" height="133"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="6v9-F3-qRI" secondAttribute="height" multiplier="1:1" id="G74-Rf-aML"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Two-factor authentication " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MqV-Um-oXU" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="148" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Verify login to strengthen the security of your account." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hlw-3x-M6e" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="40" y="176.5" width="334" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRH-tr-pR3" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="132" y="225.5" width="150" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="150" id="CD9-Fg-CaD"/>
+                                                    <constraint firstAttribute="height" constant="34" id="akS-hG-1R7"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Explore"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="LRH-tr-pR3" firstAttribute="top" secondItem="Hlw-3x-M6e" secondAttribute="bottom" constant="8" id="79J-zh-JdG"/>
+                                            <constraint firstItem="LRH-tr-pR3" firstAttribute="centerX" secondItem="Syw-ze-aat" secondAttribute="centerX" id="DCd-QM-Cx7"/>
+                                            <constraint firstItem="Hlw-3x-M6e" firstAttribute="top" secondItem="MqV-Um-oXU" secondAttribute="bottom" constant="8" id="HQg-UN-252"/>
+                                            <constraint firstItem="6v9-F3-qRI" firstAttribute="centerX" secondItem="Syw-ze-aat" secondAttribute="centerX" id="Id0-XT-opc"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hlw-3x-M6e" secondAttribute="trailing" constant="40" id="KEJ-fO-K0S"/>
+                                            <constraint firstItem="6v9-F3-qRI" firstAttribute="top" secondItem="Syw-ze-aat" secondAttribute="top" id="Q4f-9D-D8b"/>
+                                            <constraint firstItem="MqV-Um-oXU" firstAttribute="leading" secondItem="Syw-ze-aat" secondAttribute="leading" constant="20" id="Zfc-qS-Q5q"/>
+                                            <constraint firstAttribute="bottom" secondItem="LRH-tr-pR3" secondAttribute="bottom" id="avR-1x-W5l"/>
+                                            <constraint firstItem="Hlw-3x-M6e" firstAttribute="leading" secondItem="Syw-ze-aat" secondAttribute="leading" constant="40" id="fe3-HU-rdm"/>
+                                            <constraint firstItem="MqV-Um-oXU" firstAttribute="top" secondItem="6v9-F3-qRI" secondAttribute="bottom" constant="15" id="s98-wW-7H6"/>
+                                            <constraint firstAttribute="trailing" secondItem="MqV-Um-oXU" secondAttribute="trailing" constant="20" id="xzC-mV-Ebh"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c06-Hb-ics">
+                                        <rect key="frame" x="0.0" y="269.5" width="414" height="259"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneMan" translatesAutoresizingMaskIntoConstraints="NO" id="NWF-yr-Dhm">
+                                                <rect key="frame" x="140.5" y="0.0" width="133" height="132.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="NWF-yr-Dhm" secondAttribute="height" multiplier="1:1" id="Nhf-Ml-L89"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Sync address book" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QmG-in-PFa" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="147.5" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1UX-UW-rNt" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="40" y="176" width="334" height="41"/>
+                                                <string key="text">Sync your address book from your phone 
+to personal data cloud. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6y-7a-2Tu" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="132" y="225" width="150" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="cw9-sg-btN"/>
+                                                    <constraint firstAttribute="width" constant="150" id="kuS-aJ-teT"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Explore"/>
+                                                <connections>
+                                                    <action selector="syncContactButtonAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="mZb-9c-eDS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="NWF-yr-Dhm" firstAttribute="top" secondItem="c06-Hb-ics" secondAttribute="top" id="ArY-iN-Efk"/>
+                                            <constraint firstItem="b6y-7a-2Tu" firstAttribute="top" secondItem="1UX-UW-rNt" secondAttribute="bottom" constant="8" id="Pss-Eu-QKG"/>
+                                            <constraint firstItem="1UX-UW-rNt" firstAttribute="leading" secondItem="c06-Hb-ics" secondAttribute="leading" constant="40" id="QjJ-Ge-paW"/>
+                                            <constraint firstAttribute="bottom" secondItem="b6y-7a-2Tu" secondAttribute="bottom" id="Y3S-bD-70l"/>
+                                            <constraint firstItem="b6y-7a-2Tu" firstAttribute="centerX" secondItem="c06-Hb-ics" secondAttribute="centerX" id="aJO-ed-gXc"/>
+                                            <constraint firstItem="1UX-UW-rNt" firstAttribute="top" secondItem="QmG-in-PFa" secondAttribute="bottom" constant="8" id="bao-MR-CLF"/>
+                                            <constraint firstAttribute="trailing" secondItem="QmG-in-PFa" secondAttribute="trailing" constant="20" id="cvn-Wf-MMq"/>
+                                            <constraint firstItem="NWF-yr-Dhm" firstAttribute="centerX" secondItem="c06-Hb-ics" secondAttribute="centerX" id="ftM-VU-1Li"/>
+                                            <constraint firstItem="QmG-in-PFa" firstAttribute="top" secondItem="NWF-yr-Dhm" secondAttribute="bottom" constant="15" id="hMV-T5-F7p"/>
+                                            <constraint firstItem="QmG-in-PFa" firstAttribute="leading" secondItem="c06-Hb-ics" secondAttribute="leading" constant="20" id="mzw-Uw-3Rh"/>
+                                            <constraint firstAttribute="trailing" secondItem="1UX-UW-rNt" secondAttribute="trailing" constant="40" id="oc1-wL-Khq"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8P-04-mQO">
+                                        <rect key="frame" x="0.0" y="538.5" width="414" height="259.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudServices" translatesAutoresizingMaskIntoConstraints="NO" id="xdb-K8-LA6">
+                                                <rect key="frame" x="140.5" y="0.0" width="133" height="133"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="xdb-K8-LA6" secondAttribute="height" multiplier="1:1" id="qUR-W3-uHC"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Data hub for you mobile apps" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NUB-uL-RlZ" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="148" width="374" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Your authorized mobile apps on your data cloud. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pwo-8b-YkG" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="40" y="176.5" width="334" height="41"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qMx-c2-xio" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="132" y="225.5" width="150" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="B9i-9m-Dl4"/>
+                                                    <constraint firstAttribute="width" constant="150" id="tIG-r9-eOx"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Learn more "/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="NUB-uL-RlZ" firstAttribute="top" secondItem="xdb-K8-LA6" secondAttribute="bottom" constant="15" id="1Bx-ok-g1k"/>
+                                            <constraint firstItem="pwo-8b-YkG" firstAttribute="leading" secondItem="D8P-04-mQO" secondAttribute="leading" constant="40" id="62r-v2-Hts"/>
+                                            <constraint firstItem="qMx-c2-xio" firstAttribute="centerX" secondItem="D8P-04-mQO" secondAttribute="centerX" id="DOJ-dc-6xK"/>
+                                            <constraint firstAttribute="bottom" secondItem="qMx-c2-xio" secondAttribute="bottom" id="IkU-XD-rBw"/>
+                                            <constraint firstItem="NUB-uL-RlZ" firstAttribute="leading" secondItem="D8P-04-mQO" secondAttribute="leading" constant="20" id="OIX-jV-91z"/>
+                                            <constraint firstItem="xdb-K8-LA6" firstAttribute="top" secondItem="D8P-04-mQO" secondAttribute="top" id="S9u-jb-wyS"/>
+                                            <constraint firstAttribute="trailing" secondItem="pwo-8b-YkG" secondAttribute="trailing" constant="40" id="aLO-7p-hTY"/>
+                                            <constraint firstItem="pwo-8b-YkG" firstAttribute="top" secondItem="NUB-uL-RlZ" secondAttribute="bottom" constant="8" id="bfm-Wy-D5N"/>
+                                            <constraint firstItem="xdb-K8-LA6" firstAttribute="centerX" secondItem="D8P-04-mQO" secondAttribute="centerX" id="cbC-4Z-tN6"/>
+                                            <constraint firstAttribute="trailing" secondItem="NUB-uL-RlZ" secondAttribute="trailing" constant="20" id="rTK-oS-9au"/>
+                                            <constraint firstItem="qMx-c2-xio" firstAttribute="top" secondItem="pwo-8b-YkG" secondAttribute="bottom" constant="8" id="vu8-zW-jCi"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eV2-UD-quW" secondAttribute="trailing" id="0Hs-eB-rXq"/>
+                            <constraint firstItem="eV2-UD-quW" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="0Ny-Rq-Phr"/>
+                            <constraint firstItem="eV2-UD-quW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="CMp-Y5-UVl"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="eV2-UD-quW" secondAttribute="bottom" constant="20" id="pAA-Xy-B8u"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="titleLabelArr" destination="MqV-Um-oXU" collectionClass="NSMutableArray" id="sYE-fd-Bqp"/>
+                        <outletCollection property="titleLabelArr" destination="QmG-in-PFa" collectionClass="NSMutableArray" id="vGy-fB-lwT"/>
+                        <outletCollection property="titleLabelArr" destination="NUB-uL-RlZ" collectionClass="NSMutableArray" id="wUg-ZZ-sZK"/>
+                        <outletCollection property="descriptionLabelArr" destination="pwo-8b-YkG" collectionClass="NSMutableArray" id="zap-OE-y40"/>
+                        <outletCollection property="descriptionLabelArr" destination="1UX-UW-rNt" collectionClass="NSMutableArray" id="ETF-6J-2B3"/>
+                        <outletCollection property="descriptionLabelArr" destination="Hlw-3x-M6e" collectionClass="NSMutableArray" id="zBT-MR-I8R"/>
+                        <outletCollection property="featureButton" destination="LRH-tr-pR3" collectionClass="NSMutableArray" id="wQ1-3L-64a"/>
+                        <outletCollection property="featureButton" destination="b6y-7a-2Tu" collectionClass="NSMutableArray" id="IiO-Zh-YZv"/>
+                        <outletCollection property="featureButton" destination="qMx-c2-xio" collectionClass="NSMutableArray" id="xT3-oV-MQa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="26.785714285714285"/>
+        </scene>
+        <!--Sync Contact View Controller-->
+        <scene sceneID="dp8-hu-zGn">
+            <objects>
+                <viewController storyboardIdentifier="SyncContactViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YbH-6U-891" customClass="SyncContactViewController" customModule="Prifina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Em-lt-TNK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personCircle" translatesAutoresizingMaskIntoConstraints="NO" id="INT-KP-ECi">
+                                <rect key="frame" x="167" y="49" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="INT-KP-ECi" secondAttribute="height" multiplier="1:1" id="7cF-2n-8UA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Sync your device contacts " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRm-eT-gje" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="20" y="149" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Sync all Contacts " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BG0-c0-myT" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="118" y="561.5" width="136.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mew-nq-vdB" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="20" y="179.5" width="374" height="61"/>
+                                <string key="text">Sync your address book from your phone to
+the personal data cloud. The following 
+information will be synced: </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RTT-SC-7ON">
+                                <rect key="frame" x="20" y="250.5" width="374" height="240"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fIO-Jy-2wk">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Given name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubl-Hw-Dek" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="158.5" y="10" width="200.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person" translatesAutoresizingMaskIntoConstraints="NO" id="pJz-i8-9QH">
+                                                <rect key="frame" x="118.5" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="pJz-i8-9QH" secondAttribute="height" multiplier="1:1" id="Fo7-NR-Znm"/>
+                                                    <constraint firstAttribute="height" constant="25" id="iU9-7W-fO3"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ubl-Hw-Dek" secondAttribute="trailing" constant="15" id="MF4-aK-XoF"/>
+                                            <constraint firstItem="pJz-i8-9QH" firstAttribute="centerX" secondItem="fIO-Jy-2wk" secondAttribute="centerX" multiplier="0.7" id="Y5z-sN-ZTm"/>
+                                            <constraint firstItem="pJz-i8-9QH" firstAttribute="centerY" secondItem="fIO-Jy-2wk" secondAttribute="centerY" id="YGP-zw-T0k"/>
+                                            <constraint firstAttribute="height" constant="40" id="dlW-LU-tuu"/>
+                                            <constraint firstItem="ubl-Hw-Dek" firstAttribute="leading" secondItem="pJz-i8-9QH" secondAttribute="trailing" constant="15" id="ksb-GN-sx9"/>
+                                            <constraint firstItem="ubl-Hw-Dek" firstAttribute="centerY" secondItem="pJz-i8-9QH" secondAttribute="centerY" id="rO2-tG-Npc"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TNy-O6-q4t">
+                                        <rect key="frame" x="0.0" y="40" width="374" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKg-8F-pbx" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="158.5" y="10" width="200.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home" translatesAutoresizingMaskIntoConstraints="NO" id="jY0-Wz-Jiv">
+                                                <rect key="frame" x="118.5" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="jY0-Wz-Jiv" secondAttribute="height" multiplier="1:1" id="3xO-mO-FFG"/>
+                                                    <constraint firstAttribute="height" constant="25" id="Eet-4g-wnc"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="SKg-8F-pbx" firstAttribute="leading" secondItem="jY0-Wz-Jiv" secondAttribute="trailing" constant="15" id="QeQ-4h-m4W"/>
+                                            <constraint firstItem="jY0-Wz-Jiv" firstAttribute="centerY" secondItem="TNy-O6-q4t" secondAttribute="centerY" id="WHC-ks-PID"/>
+                                            <constraint firstItem="jY0-Wz-Jiv" firstAttribute="centerX" secondItem="TNy-O6-q4t" secondAttribute="centerX" multiplier="0.7" id="hyL-88-jKk"/>
+                                            <constraint firstAttribute="trailing" secondItem="SKg-8F-pbx" secondAttribute="trailing" constant="15" id="iSm-PJ-b1d"/>
+                                            <constraint firstItem="SKg-8F-pbx" firstAttribute="centerY" secondItem="jY0-Wz-Jiv" secondAttribute="centerY" id="kyc-a9-fuv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KfC-KM-iW1">
+                                        <rect key="frame" x="0.0" y="80" width="374" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQb-lU-hC8" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="158.5" y="10" width="200.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suitcase" translatesAutoresizingMaskIntoConstraints="NO" id="gDW-ZJ-h9k">
+                                                <rect key="frame" x="118.5" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="W4e-Na-4ta"/>
+                                                    <constraint firstAttribute="width" secondItem="gDW-ZJ-h9k" secondAttribute="height" multiplier="1:1" id="nE4-7o-hFo"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="gDW-ZJ-h9k" firstAttribute="centerX" secondItem="KfC-KM-iW1" secondAttribute="centerX" multiplier="0.7" id="1Nj-Lx-5Uu"/>
+                                            <constraint firstItem="gDW-ZJ-h9k" firstAttribute="centerY" secondItem="KfC-KM-iW1" secondAttribute="centerY" id="Km0-NP-Icl"/>
+                                            <constraint firstItem="NQb-lU-hC8" firstAttribute="centerY" secondItem="gDW-ZJ-h9k" secondAttribute="centerY" id="bNl-8d-8wN"/>
+                                            <constraint firstAttribute="trailing" secondItem="NQb-lU-hC8" secondAttribute="trailing" constant="15" id="fob-ka-aML"/>
+                                            <constraint firstItem="NQb-lU-hC8" firstAttribute="leading" secondItem="gDW-ZJ-h9k" secondAttribute="trailing" constant="15" id="nch-ps-mnT"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjR-IK-gdy">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Phone number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q2i-B0-6rP" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="158.5" y="10" width="200.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone" translatesAutoresizingMaskIntoConstraints="NO" id="Cz1-E7-GJR">
+                                                <rect key="frame" x="118.5" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="ZQ4-4E-7AK"/>
+                                                    <constraint firstAttribute="width" secondItem="Cz1-E7-GJR" secondAttribute="height" multiplier="1:1" id="pYR-jU-EG6"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="q2i-B0-6rP" firstAttribute="centerY" secondItem="Cz1-E7-GJR" secondAttribute="centerY" id="AAC-ix-w4Z"/>
+                                            <constraint firstItem="Cz1-E7-GJR" firstAttribute="centerX" secondItem="jjR-IK-gdy" secondAttribute="centerX" multiplier="0.7" id="Pzj-4P-Ltu"/>
+                                            <constraint firstItem="Cz1-E7-GJR" firstAttribute="centerY" secondItem="jjR-IK-gdy" secondAttribute="centerY" id="Vmm-ig-Ev7"/>
+                                            <constraint firstItem="q2i-B0-6rP" firstAttribute="leading" secondItem="Cz1-E7-GJR" secondAttribute="trailing" constant="15" id="lWL-UD-bEd"/>
+                                            <constraint firstAttribute="trailing" secondItem="q2i-B0-6rP" secondAttribute="trailing" constant="15" id="sA5-xu-Dgm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HlD-Ku-Kxa">
+                                        <rect key="frame" x="0.0" y="160" width="374" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxU-oJ-LDr" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="158.5" y="10" width="200.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="addressBook" translatesAutoresizingMaskIntoConstraints="NO" id="NyW-j9-Yxh">
+                                                <rect key="frame" x="118.5" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="06K-C9-Jbx"/>
+                                                    <constraint firstAttribute="width" secondItem="NyW-j9-Yxh" secondAttribute="height" multiplier="1:1" id="mWX-Aa-Ubt"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="FxU-oJ-LDr" firstAttribute="centerY" secondItem="NyW-j9-Yxh" secondAttribute="centerY" id="O1Y-jt-XbB"/>
+                                            <constraint firstItem="NyW-j9-Yxh" firstAttribute="centerY" secondItem="HlD-Ku-Kxa" secondAttribute="centerY" id="TTt-v9-9hJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="FxU-oJ-LDr" secondAttribute="trailing" constant="15" id="XzK-mX-cp4"/>
+                                            <constraint firstItem="NyW-j9-Yxh" firstAttribute="centerX" secondItem="HlD-Ku-Kxa" secondAttribute="centerX" multiplier="0.7" id="a8o-i5-9qf"/>
+                                            <constraint firstItem="FxU-oJ-LDr" firstAttribute="leading" secondItem="NyW-j9-Yxh" secondAttribute="trailing" constant="15" id="mcN-1p-PoA"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m4N-oM-L2w">
+                                        <rect key="frame" x="0.0" y="200" width="374" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6O2-V1-54I" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                <rect key="frame" x="158.5" y="10" width="200.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location" translatesAutoresizingMaskIntoConstraints="NO" id="Hqq-FI-QJm">
+                                                <rect key="frame" x="118.5" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Hqq-FI-QJm" secondAttribute="height" multiplier="1:1" id="2BM-g5-0Ei"/>
+                                                    <constraint firstAttribute="height" constant="25" id="TaT-d1-ub5"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Hqq-FI-QJm" firstAttribute="centerX" secondItem="m4N-oM-L2w" secondAttribute="centerX" multiplier="0.7" id="BQm-rp-f3R"/>
+                                            <constraint firstAttribute="trailing" secondItem="6O2-V1-54I" secondAttribute="trailing" constant="15" id="BTw-v9-9Jc"/>
+                                            <constraint firstItem="6O2-V1-54I" firstAttribute="leading" secondItem="Hqq-FI-QJm" secondAttribute="trailing" constant="15" id="DQZ-VD-ehW"/>
+                                            <constraint firstItem="6O2-V1-54I" firstAttribute="centerY" secondItem="Hqq-FI-QJm" secondAttribute="centerY" id="Qv9-vL-ePY"/>
+                                            <constraint firstItem="Hqq-FI-QJm" firstAttribute="centerY" secondItem="m4N-oM-L2w" secondAttribute="centerY" id="xcD-nJ-HZ5"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Any changes made on your phone will also appear on the mobile app. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZXu-SE-WgT" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="20" y="500.5" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pZv-5N-lyD">
+                                <rect key="frame" x="269.5" y="556.5" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="2Y3-g4-p42"/>
+                                    <constraint firstAttribute="width" constant="47" id="yD6-rT-7DX"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="syncContactSwitchAction:" destination="YbH-6U-891" eventType="valueChanged" id="Z1i-at-bza"/>
+                                </connections>
+                            </switch>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lj8-1L-3a5" customClass="PrifinaButton" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="312" y="44" width="60" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="qOm-aC-fGz"/>
+                                    <constraint firstAttribute="height" constant="31" id="xsY-Fd-20N"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Show"/>
+                                <connections>
+                                    <action selector="showContactButtonAction:" destination="YbH-6U-891" eventType="touchUpInside" id="cHA-iT-2O0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="OtE-py-KmN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OtE-py-KmN" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="BG0-c0-myT" secondAttribute="bottom" constant="20" id="6V9-zi-qWl"/>
+                            <constraint firstItem="ZXu-SE-WgT" firstAttribute="leading" secondItem="OtE-py-KmN" secondAttribute="leading" constant="20" id="EDT-3a-zFQ"/>
+                            <constraint firstItem="Lj8-1L-3a5" firstAttribute="top" secondItem="OtE-py-KmN" secondAttribute="top" id="JOV-VD-HGJ"/>
+                            <constraint firstItem="vRm-eT-gje" firstAttribute="leading" secondItem="OtE-py-KmN" secondAttribute="leading" constant="20" id="KRv-eN-X9N"/>
+                            <constraint firstItem="INT-KP-ECi" firstAttribute="centerX" secondItem="OtE-py-KmN" secondAttribute="centerX" id="LYx-G5-WQh"/>
+                            <constraint firstItem="vRm-eT-gje" firstAttribute="top" secondItem="INT-KP-ECi" secondAttribute="bottom" constant="20" id="New-mn-dDa"/>
+                            <constraint firstItem="BG0-c0-myT" firstAttribute="top" secondItem="ZXu-SE-WgT" secondAttribute="bottom" constant="20" id="OZX-Ak-JXn"/>
+                            <constraint firstItem="RTT-SC-7ON" firstAttribute="top" secondItem="Mew-nq-vdB" secondAttribute="bottom" constant="10" id="Qnf-ZZ-pAF"/>
+                            <constraint firstItem="RTT-SC-7ON" firstAttribute="leading" secondItem="OtE-py-KmN" secondAttribute="leading" constant="20" id="RiM-IY-dQ4"/>
+                            <constraint firstItem="ZXu-SE-WgT" firstAttribute="top" secondItem="RTT-SC-7ON" secondAttribute="bottom" constant="10" id="Vpc-05-Es7"/>
+                            <constraint firstItem="OtE-py-KmN" firstAttribute="trailing" secondItem="Mew-nq-vdB" secondAttribute="trailing" constant="20" id="XUF-cl-1cG"/>
+                            <constraint firstItem="Mew-nq-vdB" firstAttribute="top" secondItem="vRm-eT-gje" secondAttribute="bottom" constant="10" id="cJg-Cm-vJf"/>
+                            <constraint firstItem="pZv-5N-lyD" firstAttribute="leading" secondItem="BG0-c0-myT" secondAttribute="trailing" constant="15" id="d0X-5p-mtE"/>
+                            <constraint firstItem="pZv-5N-lyD" firstAttribute="centerY" secondItem="BG0-c0-myT" secondAttribute="centerY" id="fRE-LR-Ird"/>
+                            <constraint firstItem="Mew-nq-vdB" firstAttribute="leading" secondItem="OtE-py-KmN" secondAttribute="leading" constant="20" id="hqh-FO-VUV"/>
+                            <constraint firstItem="INT-KP-ECi" firstAttribute="top" secondItem="OtE-py-KmN" secondAttribute="top" constant="5" id="n9i-Nu-I9E"/>
+                            <constraint firstItem="BG0-c0-myT" firstAttribute="centerX" secondItem="OtE-py-KmN" secondAttribute="centerX" multiplier="0.9" id="oBF-ud-Hj7"/>
+                            <constraint firstItem="OtE-py-KmN" firstAttribute="trailing" secondItem="vRm-eT-gje" secondAttribute="trailing" constant="20" id="vHo-8Q-IVd"/>
+                            <constraint firstItem="OtE-py-KmN" firstAttribute="trailing" secondItem="Lj8-1L-3a5" secondAttribute="trailing" constant="42" id="vkG-mI-S0I"/>
+                            <constraint firstItem="OtE-py-KmN" firstAttribute="trailing" secondItem="RTT-SC-7ON" secondAttribute="trailing" constant="20" id="yoq-cy-zzq"/>
+                            <constraint firstItem="OtE-py-KmN" firstAttribute="trailing" secondItem="ZXu-SE-WgT" secondAttribute="trailing" constant="20" id="zgj-Ys-7Sb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="anyChangesLabel" destination="ZXu-SE-WgT" id="T1x-pt-K8e"/>
+                        <outlet property="descriptionLabel" destination="Mew-nq-vdB" id="Qt8-o2-0w7"/>
+                        <outlet property="showContactButton" destination="Lj8-1L-3a5" id="3cN-EJ-lql"/>
+                        <outlet property="syncAllLabel" destination="BG0-c0-myT" id="vi5-nP-bw2"/>
+                        <outlet property="syncContactSwitch" destination="pZv-5N-lyD" id="LOT-EZ-EEp"/>
+                        <outlet property="titleLabel" destination="vRm-eT-gje" id="8vC-xa-emW"/>
+                        <outletCollection property="infoLabel" destination="ubl-Hw-Dek" collectionClass="NSMutableArray" id="As1-Tx-ZGn"/>
+                        <outletCollection property="infoLabel" destination="SKg-8F-pbx" collectionClass="NSMutableArray" id="dXK-C7-dg2"/>
+                        <outletCollection property="infoLabel" destination="NQb-lU-hC8" collectionClass="NSMutableArray" id="YOD-Yi-Glk"/>
+                        <outletCollection property="infoLabel" destination="q2i-B0-6rP" collectionClass="NSMutableArray" id="qzW-Fa-pEz"/>
+                        <outletCollection property="infoLabel" destination="FxU-oJ-LDr" collectionClass="NSMutableArray" id="bkb-k4-mr7"/>
+                        <outletCollection property="infoLabel" destination="6O2-V1-54I" collectionClass="NSMutableArray" id="2zr-G0-EM9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SlY-CC-i95" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852.17391304347836" y="26.785714285714285"/>
+        </scene>
+        <!--List Contacts View Controller-->
+        <scene sceneID="7Sj-kC-uaP">
+            <objects>
+                <viewController storyboardIdentifier="ListContactsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="d7v-OW-JTh" customClass="ListContactsViewController" customModule="Prifina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X2B-G8-5g2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9CR-93-Zm7">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListContactTableViewCell" rowHeight="92" id="NMs-rv-BAX" customClass="ListContactTableViewCell" customModule="Prifina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="92"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NMs-rv-BAX" id="jXu-wa-ChT">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="92"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fCq-5a-bOx">
+                                                    <rect key="frame" x="30" y="21" width="50" height="50"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="fCq-5a-bOx" secondAttribute="height" multiplier="1:1" id="C36-Lk-5aU"/>
+                                                        <constraint firstAttribute="width" priority="999" constant="50" id="q7j-GV-3z0"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhX-rH-h8y" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                                    <rect key="frame" x="100" y="35.5" width="274" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rhX-rH-h8y" secondAttribute="trailing" constant="20" id="9fi-oj-tFh"/>
+                                                <constraint firstItem="rhX-rH-h8y" firstAttribute="leading" secondItem="fCq-5a-bOx" secondAttribute="trailing" constant="20" id="Fep-qw-tAa"/>
+                                                <constraint firstItem="fCq-5a-bOx" firstAttribute="leading" secondItem="jXu-wa-ChT" secondAttribute="leadingMargin" constant="10" id="LNh-67-3Na"/>
+                                                <constraint firstItem="fCq-5a-bOx" firstAttribute="top" secondItem="jXu-wa-ChT" secondAttribute="topMargin" constant="10" id="T53-8S-NcJ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fCq-5a-bOx" secondAttribute="bottom" constant="10" id="k5r-3l-gTd"/>
+                                                <constraint firstItem="rhX-rH-h8y" firstAttribute="centerY" secondItem="fCq-5a-bOx" secondAttribute="centerY" id="nrT-es-f9d"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="contactPhotoImageView" destination="fCq-5a-bOx" id="S9l-Gu-pS0"/>
+                                            <outlet property="nameLabel" destination="rhX-rH-h8y" id="s8E-62-igY"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="PrE-kw-LPs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PrE-kw-LPs" firstAttribute="bottom" secondItem="9CR-93-Zm7" secondAttribute="bottom" id="3Cr-5A-9Il"/>
+                            <constraint firstItem="PrE-kw-LPs" firstAttribute="trailing" secondItem="9CR-93-Zm7" secondAttribute="trailing" id="Gbb-uj-adT"/>
+                            <constraint firstItem="9CR-93-Zm7" firstAttribute="leading" secondItem="PrE-kw-LPs" secondAttribute="leading" id="H98-Oq-RNt"/>
+                            <constraint firstItem="9CR-93-Zm7" firstAttribute="top" secondItem="PrE-kw-LPs" secondAttribute="top" id="OeO-BZ-O31"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vSc-9J-dDD"/>
+                    <connections>
+                        <outlet property="contactTableView" destination="9CR-93-Zm7" id="Y83-ZO-PZV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDA-OU-BIV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="850.72463768115949" y="761.38392857142856"/>
+        </scene>
+        <!--Sync Contact Success View Controller-->
+        <scene sceneID="RgF-2s-FhK">
+            <objects>
+                <viewController storyboardIdentifier="SyncContactSuccessViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fbv-E5-AJG" customClass="SyncContactSuccessViewController" customModule="Prifina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7vQ-j3-kWX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tickCircle" translatesAutoresizingMaskIntoConstraints="NO" id="oG5-87-zJR">
+                                <rect key="frame" x="162.5" y="272.5" width="89" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oG5-87-zJR" secondAttribute="height" multiplier="1:1" id="vw4-aF-6hE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your contacts are now being successfully synced with your online personal data cloud." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHq-oI-vFu" customClass="PrifinaLabel" customModule="Prifina" customModuleProvider="target">
+                                <rect key="frame" x="40" y="391.5" width="334" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mQx-4J-Pae"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eHq-oI-vFu" firstAttribute="top" secondItem="oG5-87-zJR" secondAttribute="bottom" constant="30" id="9h3-rT-VG7"/>
+                            <constraint firstItem="oG5-87-zJR" firstAttribute="centerY" secondItem="mQx-4J-Pae" secondAttribute="centerY" multiplier="0.7" id="Ao4-oG-8F4"/>
+                            <constraint firstItem="eHq-oI-vFu" firstAttribute="leading" secondItem="mQx-4J-Pae" secondAttribute="leading" constant="40" id="Jd5-Kb-LsI"/>
+                            <constraint firstItem="oG5-87-zJR" firstAttribute="centerX" secondItem="mQx-4J-Pae" secondAttribute="centerX" id="Nxm-Y9-Gxi"/>
+                            <constraint firstItem="mQx-4J-Pae" firstAttribute="trailing" secondItem="eHq-oI-vFu" secondAttribute="trailing" constant="40" id="eLj-S5-Cv8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="eHq-oI-vFu" id="x8f-Wd-YQm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8dI-dl-OBX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1607" y="27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="addressBook" width="20" height="20"/>
+        <image name="cloudServices" width="279" height="238"/>
+        <image name="home" width="20" height="20"/>
+        <image name="laptopLady" width="248" height="212"/>
+        <image name="location" width="24" height="24"/>
+        <image name="person" width="20" height="20"/>
+        <image name="personCircle" width="78" height="80"/>
+        <image name="phone" width="24" height="24"/>
+        <image name="phoneMan" width="247" height="211"/>
+        <image name="suitcase" width="20" height="20"/>
+        <image name="tickCircle" width="89" height="88"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
