@@ -1,0 +1,43 @@
+{
+    "UserAgent": "aws-amplify/cli",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-2_Bzs68Tuzn",
+            "AppClientId": "4k13ouvrgkki0akg9s8sj26d5g",
+            "Region": "us-east-2",
+            "AppClientSecret": "ci0nlng1j83c4jtk2fhhoj5jmm95og1kk3045vnjjuj61mss09r"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "authenticationFlowType": "USER_SRP_AUTH",
+            "socialProviders": [],
+            "usernameAttributes": [],
+            "signupAttributes": [
+                "EMAIL",
+                "PHONE_NUMBER"
+            ],
+            "passwordProtectionSettings": {
+                "passwordPolicyMinLength": 8,
+                "passwordPolicyCharacters": [
+                    "REQUIRES_LOWERCASE",
+                    "REQUIRES_UPPERCASE",
+                    "REQUIRES_NUMBERS",
+                    "REQUIRES_SYMBOLS"
+                ]
+            },
+            "mfaConfiguration": "ON",
+            "mfaTypes": [
+                "SMS",
+                "TOTP"
+            ],
+            "verificationMechanisms": [
+                "PHONE_NUMBER"
+            ]
+        }
+    }
+}

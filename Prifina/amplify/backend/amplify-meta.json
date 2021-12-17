@@ -1,0 +1,58 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-prifinaiosapp-dev-161636-authRole",
+      "UnauthRoleArn": "arn:aws:iam::972626402314:role/amplify-prifinaiosapp-dev-161636-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::972626402314:role/amplify-prifinaiosapp-dev-161636-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-prifinaiosapp-dev-161636-deployment",
+      "UnauthRoleName": "amplify-prifinaiosapp-dev-161636-unauthRole",
+      "StackName": "amplify-prifinaiosapp-dev-161636",
+      "StackId": "arn:aws:cloudformation:us-east-2:972626402314:stack/amplify-prifinaiosapp-dev-161636/cfeee4e0-4d13-11ec-8be3-0aa15e6cb03e",
+      "AmplifyAppId": "d2jds8mznrxr3a"
+    }
+  },
+  "auth": {
+    "prifinaiosapp4892c7e1": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "us-east-2_Bzs68Tuzn",
+        "UserPoolName": "PrifinaiOSApp",
+        "AppClientID": "4k13ouvrgkki0akg9s8sj26d5g",
+        "AppClientSecret": "ci0nlng1j83c4jtk2fhhoj5jmm95og1kk3045vnjjuj61mss09r",
+        "AppClientIDWeb": "68v3qdqdgdlgnpqb6dpi8fe4i1",
+        "CreatedSNSRole": "arn:aws:iam::972626402314:role/service-role/PrifinaiOSApp"
+      },
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL",
+          "PHONE_NUMBER"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": [
+            "REQUIRES_LOWERCASE",
+            "REQUIRES_UPPERCASE",
+            "REQUIRES_NUMBERS",
+            "REQUIRES_SYMBOLS"
+          ]
+        },
+        "mfaConfiguration": "ON",
+        "mfaTypes": [
+          "SMS",
+          "TOTP"
+        ],
+        "verificationMechanisms": [
+          "PHONE_NUMBER"
+        ]
+      },
+      "lastPushTimeStamp": "2021-11-24T10:59:38.711Z"
+    }
+  }
+}

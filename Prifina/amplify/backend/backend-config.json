@@ -1,0 +1,11 @@
+{
+  "auth": {
+    "prifinaiosapp4892c7e1": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
