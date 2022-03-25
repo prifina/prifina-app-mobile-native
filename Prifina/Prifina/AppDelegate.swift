@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         do {
             Amplify.Logging.logLevel = .verbose
             try Amplify.add(plugin: AWSCognitoAuthPlugin())
+            try Amplify.add(plugin: AWSAPIPlugin(modelRegistration: AmplifyModels()))
             try Amplify.configure()
             debugPrint("Amplify configured with auth plugin")
         } catch {

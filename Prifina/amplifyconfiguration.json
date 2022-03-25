@@ -1,6 +1,18 @@
 {
     "UserAgent": "aws-amplify-cli/2.0",
     "Version": "1.0",
+    "api": {
+        "plugins": {
+            "awsAPIPlugin": {
+                "prifinaiosapp": {
+                    "endpointType": "GraphQL",
+                    "endpoint": "https://bwye2psajnb3tkxru74lj4xdia.appsync-api.us-east-2.amazonaws.com/graphql",
+                    "region": "us-east-2",
+                    "authorizationType": "AMAZON_COGNITO_USER_POOLS"
+                }
+            }
+        }
+    },
     "auth": {
         "plugins": {
             "awsCognitoAuthPlugin": {
@@ -43,6 +55,14 @@
                         "verificationMechanisms": [
                             "PHONE_NUMBER"
                         ]
+                    }
+                },
+                "AppSync": {
+                    "Default": {
+                        "ApiUrl": "https://bwye2psajnb3tkxru74lj4xdia.appsync-api.us-east-2.amazonaws.com/graphql",
+                        "Region": "us-east-2",
+                        "AuthMode": "AMAZON_COGNITO_USER_POOLS",
+                        "ClientDatabasePrefix": "prifinaiosapp_AMAZON_COGNITO_USER_POOLS"
                     }
                 }
             }

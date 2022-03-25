@@ -54,5 +54,30 @@
       },
       "lastPushTimeStamp": "2021-11-24T10:59:38.711Z"
     }
+  },
+  "api": {
+    "prifinaiosapp": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+            "userPoolConfig": {
+              "userPoolId": "authprifinaiosapp4892c7e1"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "4b7lhspxvbgs3bqbku3f6iyrhu",
+        "GraphQLAPIEndpointOutput": "https://bwye2psajnb3tkxru74lj4xdia.appsync-api.us-east-2.amazonaws.com/graphql"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-prifinaiosapp-dev-161636-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiprifinaiosapp"
+      },
+      "lastPushTimeStamp": "2022-01-15T15:21:25.671Z",
+      "lastPushDirHash": "tmsFtGJySLPP93yJrCuhDAgd1aw="
+    }
   }
 }

@@ -151,6 +151,22 @@
           "Ref": "UnauthRoleName"
         }
       }
+    },
+    "apiprifinaiosapp": {
+      "Type": "AWS::CloudFormation::Stack",
+      "Properties": {
+        "TemplateURL": "https://s3.amazonaws.com/amplify-prifinaiosapp-dev-161636-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "Parameters": {
+          "CreateAPIKey": 0,
+          "AppSyncApiName": "prifinaiosapp",
+          "DynamoDBBillingMode": "PAY_PER_REQUEST",
+          "DynamoDBEnableServerSideEncryption": false,
+          "AuthCognitoUserPoolId": "us-east-2_Bzs68Tuzn",
+          "S3DeploymentBucket": "amplify-prifinaiosapp-dev-161636-deployment",
+          "S3DeploymentRootKey": "amplify-appsync-files/29e911bdc3c7d9959c8fcb8c57edc24611baf5f8",
+          "env": "dev"
+        }
+      }
     }
   }
 }

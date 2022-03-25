@@ -39,5 +39,13 @@
                 "PHONE_NUMBER"
             ]
         }
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://bwye2psajnb3tkxru74lj4xdia.appsync-api.us-east-2.amazonaws.com/graphql",
+            "Region": "us-east-2",
+            "AuthMode": "AMAZON_COGNITO_USER_POOLS",
+            "ClientDatabasePrefix": "prifinaiosapp_AMAZON_COGNITO_USER_POOLS"
+        }
     }
 }

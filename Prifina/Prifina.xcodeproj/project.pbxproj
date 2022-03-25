@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		01B24EB8229ACD169BBFD5F9 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = D72BEC182F09E9307B1D20DE /* amplifyconfiguration.json */; };
+		1F6F6EAA175C6CDF8E2544DC /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99F7DB6896BB4A6A5970CFA /* Contact.swift */; };
 		21368FDE595D67635B26CE6E /* Pods_Prifina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA21B948A4094CABBD44C6A3 /* Pods_Prifina.framework */; };
 		2D1B4395C842EC789DA95622 /* Pods_Prifina_PrifinaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06CB6C2E47DFECBF4096FF5 /* Pods_Prifina_PrifinaUITests.framework */; };
 		6E627A2CC2B2E1B05BAC9378 /* Pods_PrifinaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB1CAE939EF4BD4D407CD4D /* Pods_PrifinaTests.framework */; };
+		74ECF38D926DE6973A78397F /* Contact+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F364561123FE97B18E53672 /* Contact+Schema.swift */; };
+		83513A8727931F0500EF53C0 /* models in Resources */ = {isa = PBXBuildFile; fileRef = 83513A8627931F0400EF53C0 /* models */; };
 		83C37D20274FA8A100EE9885 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C37D1F274FA8A100EE9885 /* ReachabilityManager.swift */; };
 		83C37D22274FBB1100EE9885 /* Constants+Utility .swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C37D21274FBB1100EE9885 /* Constants+Utility .swift */; };
 		BDD9680659EA737435039B65 /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = EFF8C81CB7C1DDC3ADAF0AD2 /* awsconfiguration.json */; };
@@ -59,6 +62,7 @@
 		C1A0A8AA273E531700C306C9 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A0A8A9273E531700C306C9 /* ContactModel.swift */; };
 		C1A0A8AC273E551100C306C9 /* PrifinaContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A0A8AB273E551100C306C9 /* PrifinaContact.swift */; };
 		C1A0A8AE273E829900C306C9 /* PrifinaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A0A8AD273E829900C306C9 /* PrifinaTextField.swift */; };
+		DDA4302136FF334961FE452C /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E178F3F31CEB097C835DF8F5 /* AmplifyModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,12 +83,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		83513A8627931F0400EF53C0 /* models */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = models; path = amplify/generated/models; sourceTree = SOURCE_ROOT; };
 		83C37D1F274FA8A100EE9885 /* ReachabilityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
 		83C37D21274FBB1100EE9885 /* Constants+Utility .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constants+Utility .swift"; sourceTree = "<group>"; };
 		8AB1CAE939EF4BD4D407CD4D /* Pods_PrifinaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrifinaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F364561123FE97B18E53672 /* Contact+Schema.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = "Contact+Schema.swift"; path = "amplify/generated/models/Contact+Schema.swift"; sourceTree = "<group>"; };
 		97895442224520ACC36A6A88 /* Pods-Prifina-PrifinaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prifina-PrifinaUITests.debug.xcconfig"; path = "Target Support Files/Pods-Prifina-PrifinaUITests/Pods-Prifina-PrifinaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9EC5F317FC7E52152498E1D7 /* Pods-Prifina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prifina.release.xcconfig"; path = "Target Support Files/Pods-Prifina/Pods-Prifina.release.xcconfig"; sourceTree = "<group>"; };
 		A9116CC2C25822816EFEFEC4 /* Pods-Prifina-PrifinaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prifina-PrifinaUITests.release.xcconfig"; path = "Target Support Files/Pods-Prifina-PrifinaUITests/Pods-Prifina-PrifinaUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B99F7DB6896BB4A6A5970CFA /* Contact.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Contact.swift; path = amplify/generated/models/Contact.swift; sourceTree = "<group>"; };
 		BD0DDFC02A1319FD3C4DC86D /* Pods-Prifina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prifina.debug.xcconfig"; path = "Target Support Files/Pods-Prifina/Pods-Prifina.debug.xcconfig"; sourceTree = "<group>"; };
 		C19AD573273CE17C000AE85F /* PrifinaButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrifinaButton.swift; sourceTree = "<group>"; };
 		C19AD576273CE673000AE85F /* FeatureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureModel.swift; sourceTree = "<group>"; };
@@ -140,6 +147,7 @@
 		D72BEC182F09E9307B1D20DE /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		DA21B948A4094CABBD44C6A3 /* Pods_Prifina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prifina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2153CC4FAE1CED04E1E7F4 /* Pods-PrifinaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrifinaTests.release.xcconfig"; path = "Target Support Files/Pods-PrifinaTests/Pods-PrifinaTests.release.xcconfig"; sourceTree = "<group>"; };
+		E178F3F31CEB097C835DF8F5 /* AmplifyModels.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = AmplifyModels.swift; path = amplify/generated/models/AmplifyModels.swift; sourceTree = "<group>"; };
 		E8FB2CB0FC69EAF052F169E6 /* Pods-PrifinaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrifinaTests.debug.xcconfig"; path = "Target Support Files/Pods-PrifinaTests/Pods-PrifinaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EFF8C81CB7C1DDC3ADAF0AD2 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = text.json; path = awsconfiguration.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,6 +200,16 @@
 				DC2153CC4FAE1CED04E1E7F4 /* Pods-PrifinaTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A6BF85F1692D391F6211D345 /* AmplifyModels */ = {
+			isa = PBXGroup;
+			children = (
+				E178F3F31CEB097C835DF8F5 /* AmplifyModels.swift */,
+				8F364561123FE97B18E53672 /* Contact+Schema.swift */,
+				B99F7DB6896BB4A6A5970CFA /* Contact.swift */,
+			);
+			name = AmplifyModels;
 			sourceTree = "<group>";
 		};
 		C19AD575273CE652000AE85F /* Models */ = {
@@ -370,6 +388,7 @@
 				A146D8416D82852F6857DC61 /* Pods */,
 				F154CA39FD420E5B7484BB11 /* Frameworks */,
 				65D39537E19DFDC80AD47371 /* AmplifyConfig */,
+				A6BF85F1692D391F6211D345 /* AmplifyModels */,
 			);
 			sourceTree = "<group>";
 		};
@@ -386,6 +405,7 @@
 		C19E4F83273AA10D00E55E97 /* Prifina */ = {
 			isa = PBXGroup;
 			children = (
+				83513A8627931F0400EF53C0 /* models */,
 				C19E4F84273AA10D00E55E97 /* AppDelegate.swift */,
 				C19E4F86273AA10D00E55E97 /* SceneDelegate.swift */,
 				C19D2D7C273BA437005700C9 /* Interface */,
@@ -545,6 +565,7 @@
 				C19D2DB5273BD95A005700C9 /* OpenSans-MediumItalic.ttf in Resources */,
 				C19D2DB3273BD95A005700C9 /* OpenSans-Medium.ttf in Resources */,
 				C19D2DAE273BD95A005700C9 /* OpenSans-SemiBold.ttf in Resources */,
+				83513A8727931F0500EF53C0 /* models in Resources */,
 				C19AD582273D4DB0000AE85F /* Home.storyboard in Resources */,
 				C19D2DAD273BD95A005700C9 /* OpenSans-Italic.ttf in Resources */,
 				C19E4F91273AA11100E55E97 /* LaunchScreen.storyboard in Resources */,
@@ -588,9 +609,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Prifina/Pods-Prifina-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Prifina/Pods-Prifina-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -605,9 +630,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Prifina-PrifinaUITests/Pods-Prifina-PrifinaUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Prifina-PrifinaUITests/Pods-Prifina-PrifinaUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -715,6 +744,9 @@
 				C1A0A8AC273E551100C306C9 /* PrifinaContact.swift in Sources */,
 				C1A0A8A8273E4FB700C306C9 /* ListContactTableViewCell.swift in Sources */,
 				C19D2D90273BCB8E005700C9 /* OnboardingCollectionViewCell.swift in Sources */,
+				DDA4302136FF334961FE452C /* AmplifyModels.swift in Sources */,
+				74ECF38D926DE6973A78397F /* Contact+Schema.swift in Sources */,
+				1F6F6EAA175C6CDF8E2544DC /* Contact.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@ target 'Prifina' do
 
   pod 'Amplify'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
+  pod 'AmplifyPlugins/AWSAPIPlugin'
   pod 'ReachabilitySwift'
   pod 'SVProgressHUD'
   pod 'IQKeyboardManagerSwift'

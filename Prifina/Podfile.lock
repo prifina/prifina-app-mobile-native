@@ -2,6 +2,10 @@ PODS:
   - Amplify (1.16.1):
     - Amplify/Default (= 1.16.1)
   - Amplify/Default (1.16.1)
+  - AmplifyPlugins/AWSAPIPlugin (1.16.1):
+    - AppSyncRealTimeClient (~> 1.4)
+    - AWSCore (~> 2.26.5)
+    - AWSPluginsCore (= 1.16.1)
   - AmplifyPlugins/AWSCognitoAuthPlugin (1.16.1):
     - AWSAuthCore (~> 2.26.5)
     - AWSCognitoIdentityProvider (~> 2.26.5)
@@ -9,6 +13,8 @@ PODS:
     - AWSCore (~> 2.26.5)
     - AWSMobileClient (~> 2.26.5)
     - AWSPluginsCore (= 1.16.1)
+  - AppSyncRealTimeClient (1.6.0):
+    - Starscream (~> 3.1.1)
   - AWSAuthCore (2.26.5):
     - AWSCore (= 2.26.5)
   - AWSCognitoIdentityProvider (2.26.5):
@@ -26,10 +32,12 @@ PODS:
     - AWSCore (~> 2.26.5)
   - IQKeyboardManagerSwift (6.5.6)
   - ReachabilitySwift (5.0.0)
+  - Starscream (3.1.1)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Amplify
+  - AmplifyPlugins/AWSAPIPlugin
   - AmplifyPlugins/AWSCognitoAuthPlugin
   - IQKeyboardManagerSwift
   - ReachabilitySwift
@@ -39,6 +47,7 @@ SPEC REPOS:
   trunk:
     - Amplify
     - AmplifyPlugins
+    - AppSyncRealTimeClient
     - AWSAuthCore
     - AWSCognitoIdentityProvider
     - AWSCognitoIdentityProviderASF
@@ -47,11 +56,13 @@ SPEC REPOS:
     - AWSPluginsCore
     - IQKeyboardManagerSwift
     - ReachabilitySwift
+    - Starscream
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   Amplify: 6537202e60db68f911ca9382bfc19be3cdd3a78e
   AmplifyPlugins: 874492f1351a54eaf503fd529dc1af61c4b4eb78
+  AppSyncRealTimeClient: 8b5ec94085b8ee9bb6fb9d9d76a157beb538ec6f
   AWSAuthCore: ac6f2bf01b136251f816ca99a21f142d4a1a17ef
   AWSCognitoIdentityProvider: c7983af57977cf463041e818e3e0414add5dd02b
   AWSCognitoIdentityProviderASF: e34812b1308d41a0d026ab5d54693fdc93e412b3
@@ -60,8 +71,9 @@ SPEC CHECKSUMS:
   AWSPluginsCore: 7e22a2df766dbfea3aec1e7d88916a74ae94be71
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 1ecfcae257913bdaba1b3f1fcb65bcc93efccce1
+PODFILE CHECKSUM: 4565a1959811aad43ccda27c93bee20038312511
 
 COCOAPODS: 1.11.2
