@@ -14,7 +14,7 @@ class ListContactTableViewCell: UITableViewCell {
     @IBOutlet weak var nameLabel: PrifinaLabel!
 
     // MARK: - Properties
-    var contactDetails: ContactDetails! {
+    var contactDetails: ServerContactDetails.DocumentInStage! {
         didSet {
             configureCell()
         }
@@ -34,7 +34,7 @@ class ListContactTableViewCell: UITableViewCell {
     }
     
     private func configureCell() {
-        contactPhotoImageView.image = contactDetails.getThumbnailUIImage()
-        nameLabel.text = contactDetails.firstName + contactDetails.lastName
+        contactPhotoImageView.image = UIImage(named: "personCircle")
+        nameLabel.text = (contactDetails.name ?? "") + "\n" + (contactDetails.mobile ?? "")
     }
 }

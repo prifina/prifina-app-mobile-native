@@ -20,6 +20,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         prepareUI()
+        startSyncServices()
     }
     
     // MARK: - Private Methods
@@ -31,10 +32,16 @@ class HomeViewController: UIViewController {
         }
     }
     
+    private func startSyncServices() {
+        if LoggedInUser.shared.isContactSyncEnabled {
+            PrifinaContact.shared.startSyncing()
+        }
+    }
+    
+    
     // MARK: - Action Methods
     @IBAction func syncContactButtonAction(_ sender: PrifinaButton) {
         let syncContactVC = SyncContactViewController.instantiateFromStoryboard(.home)
         navigationController?.pushViewController(syncContactVC, animated: true)
-        
     }
 }

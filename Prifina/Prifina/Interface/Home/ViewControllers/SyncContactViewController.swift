@@ -19,7 +19,8 @@ class SyncContactViewController: UIViewController {
     @IBOutlet weak var showContactButton: PrifinaButton!
 
     // MARK: - Properties
-    private let prifinaContact = PrifinaContact()
+    private let prifinaContact = PrifinaContact.shared
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,8 +40,12 @@ class SyncContactViewController: UIViewController {
     private func checkContactPermission() {
         DispatchQueue.main.async { [weak self] in
             guard let self = self else { return }
-            self.syncContactSwitch.isOn = self.prifinaContact.contactAuthorizationStatus == .authorized
-            self.showContactButton.isHidden = !(self.prifinaContact.contactAuthorizationStatus == .authorized)
+            if self.prifinaContact.contactAuthorizationStatus == .authorized &&
+                LoggedInUser.shared.isContactSyncEnabled == true {
+                self.syncContactSwitch.isOn = true
+            } else {
+                self.syncContactSwitch.isOn = false
+            }
         }
     }
     
@@ -49,10 +54,17 @@ class SyncContactViewController: UIViewController {
         if sender.isOn && prifinaContact.contactAuthorizationStatus != .authorized {
             prifinaContact.contactsRequestPermission { [weak self] isAuthorized in
                 guard let self = self else { return }
+                LoggedInUser.shared.isContactSyncEnabled = isAuthorized
                 self.checkContactPermission()
                 if !isAuthorized {
                     UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
                 }
+            }
+        } else if prifinaContact.contactAuthorizationStatus == .authorized {
+            LoggedInUser.shared.isContactSyncEnabled = sender.isOn
+            self.checkContactPermission()
+            if sender.isOn {
+                prifinaContact.startSyncing()
             }
         }
     }

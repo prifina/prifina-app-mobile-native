@@ -4,14 +4,15 @@
 target 'Prifina' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
+  # Pods for Prifina
   pod 'Amplify'
   pod 'AmplifyPlugins/AWSCognitoAuthPlugin'
-  pod 'AmplifyPlugins/AWSAPIPlugin'
+#  pod 'AmplifyPlugins/AWSAPIPlugin'
   pod 'ReachabilitySwift'
   pod 'SVProgressHUD'
   pod 'IQKeyboardManagerSwift'
-  # Pods for Prifina
+  pod "Apollo"
 
   target 'PrifinaTests' do
     inherit! :search_paths

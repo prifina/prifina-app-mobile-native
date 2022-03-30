@@ -2,10 +2,6 @@ PODS:
   - Amplify (1.16.1):
     - Amplify/Default (= 1.16.1)
   - Amplify/Default (1.16.1)
-  - AmplifyPlugins/AWSAPIPlugin (1.16.1):
-    - AppSyncRealTimeClient (~> 1.4)
-    - AWSCore (~> 2.26.5)
-    - AWSPluginsCore (= 1.16.1)
   - AmplifyPlugins/AWSCognitoAuthPlugin (1.16.1):
     - AWSAuthCore (~> 2.26.5)
     - AWSCognitoIdentityProvider (~> 2.26.5)
@@ -13,32 +9,33 @@ PODS:
     - AWSCore (~> 2.26.5)
     - AWSMobileClient (~> 2.26.5)
     - AWSPluginsCore (= 1.16.1)
-  - AppSyncRealTimeClient (1.6.0):
-    - Starscream (~> 3.1.1)
-  - AWSAuthCore (2.26.5):
-    - AWSCore (= 2.26.5)
-  - AWSCognitoIdentityProvider (2.26.5):
-    - AWSCognitoIdentityProviderASF (= 2.26.5)
-    - AWSCore (= 2.26.5)
-  - AWSCognitoIdentityProviderASF (2.26.5)
-  - AWSCore (2.26.5)
-  - AWSMobileClient (2.26.5):
-    - AWSAuthCore (= 2.26.5)
-    - AWSCognitoIdentityProvider (= 2.26.5)
-    - AWSCognitoIdentityProviderASF (= 2.26.5)
-    - AWSCore (= 2.26.5)
+  - Apollo (0.51.2):
+    - Apollo/Core (= 0.51.2)
+  - Apollo/Core (0.51.2)
+  - AWSAuthCore (2.26.7):
+    - AWSCore (= 2.26.7)
+  - AWSCognitoIdentityProvider (2.26.7):
+    - AWSCognitoIdentityProviderASF (= 2.26.7)
+    - AWSCore (= 2.26.7)
+  - AWSCognitoIdentityProviderASF (2.26.7):
+    - AWSCore (= 2.26.7)
+  - AWSCore (2.26.7)
+  - AWSMobileClient (2.26.7):
+    - AWSAuthCore (= 2.26.7)
+    - AWSCognitoIdentityProvider (= 2.26.7)
+    - AWSCognitoIdentityProviderASF (= 2.26.7)
+    - AWSCore (= 2.26.7)
   - AWSPluginsCore (1.16.1):
     - Amplify (= 1.16.1)
     - AWSCore (~> 2.26.5)
   - IQKeyboardManagerSwift (6.5.6)
   - ReachabilitySwift (5.0.0)
-  - Starscream (3.1.1)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Amplify
-  - AmplifyPlugins/AWSAPIPlugin
   - AmplifyPlugins/AWSCognitoAuthPlugin
+  - Apollo
   - IQKeyboardManagerSwift
   - ReachabilitySwift
   - SVProgressHUD
@@ -47,7 +44,7 @@ SPEC REPOS:
   trunk:
     - Amplify
     - AmplifyPlugins
-    - AppSyncRealTimeClient
+    - Apollo
     - AWSAuthCore
     - AWSCognitoIdentityProvider
     - AWSCognitoIdentityProviderASF
@@ -56,24 +53,22 @@ SPEC REPOS:
     - AWSPluginsCore
     - IQKeyboardManagerSwift
     - ReachabilitySwift
-    - Starscream
     - SVProgressHUD
 
 SPEC CHECKSUMS:
   Amplify: 6537202e60db68f911ca9382bfc19be3cdd3a78e
   AmplifyPlugins: 874492f1351a54eaf503fd529dc1af61c4b4eb78
-  AppSyncRealTimeClient: 8b5ec94085b8ee9bb6fb9d9d76a157beb538ec6f
-  AWSAuthCore: ac6f2bf01b136251f816ca99a21f142d4a1a17ef
-  AWSCognitoIdentityProvider: c7983af57977cf463041e818e3e0414add5dd02b
-  AWSCognitoIdentityProviderASF: e34812b1308d41a0d026ab5d54693fdc93e412b3
-  AWSCore: e84c89bded6fae98ae9c297c71f10f2c87eedc3d
-  AWSMobileClient: 29692a65143c9262e37a2a1c4d4c58c6bc2a85c3
+  Apollo: e5bc805c3f3556c18edc4eae4e2ea4723cea2318
+  AWSAuthCore: e987fce9ad13ef8ac7d39d82305af21a63c590cf
+  AWSCognitoIdentityProvider: 94cb0197e41662e3d29ee0feeb0cfa10d2242302
+  AWSCognitoIdentityProviderASF: 306610c6b2df9a0449243911a67d44b49d0a708f
+  AWSCore: e7fc9a005c527f2623b699a3ff8595fc45c24bd9
+  AWSMobileClient: 318f7388a20424d2fe47fc946e3ba9b722b040b8
   AWSPluginsCore: 7e22a2df766dbfea3aec1e7d88916a74ae94be71
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
-  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 4565a1959811aad43ccda27c93bee20038312511
+PODFILE CHECKSUM: 601b55ead522d3a8677ecfd33452d986a312e38c
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

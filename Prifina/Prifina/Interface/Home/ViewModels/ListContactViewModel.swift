@@ -6,23 +6,31 @@
 //
 
 import Foundation
-import Contacts
 
 class ListContactViewModel {
     
     // MARK: - Properties
-    private(set) var contactArr = [ContactDetails]()
+    var contactArr: [GetUserAllContactQuery.Data.AddressBookApp]?
     
     // MARK: - Private Methods
-    func fetchContacts(_ completion: @escaping ((Bool) -> Void)) {
-        PrifinaContact().fetchAllContacts { contacts in
-            guard let contactsArr = contacts else {
-                debugPrint("Contact Arr nil")
+    func fetchContactsQL(_ completion: @escaping ((Bool) -> Void)) {
+       guard let uploadedByUid = LoggedInUser.shared.user?.userId else {
+            debugPrint("Logged in user id is nil")
+           completion(false)
+            return
+        }
+        debugPrint("Fetch contacts uploaded by uid", uploadedByUid )
+        Network.shared.apollo.fetch(query: GetUserAllContactQuery(uploadedByUid: uploadedByUid), cachePolicy: .returnCacheDataAndFetch) { result in
+            switch result {
+            case .success(let allContacts):
+                debugPrint("Fetch contacts success")
+                dump(allContacts.data?.addressBookApps)
+                self.contactArr = allContacts.data?.addressBookApps
+                completion(true)
+            case .failure(let error):
+                debugPrint("Fetch contacts failed", error)
                 completion(false)
-                return
             }
-            self.contactArr = contactsArr
-            completion(true)
         }
     }
     

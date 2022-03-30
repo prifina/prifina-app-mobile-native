@@ -7,10 +7,15 @@
 
 import UIKit
 
+typealias ServerContactDetails = GetUserAllContactQuery.Data.AddressBookApp
+
 struct ContactDetails {
-    let firstName: String
-    let lastName: String
-    let phoneNumber: String
+    let id: String
+    let name: String?
+    let phoneNumber: String?
+    let homeEmail: String?
+    let workEmail: String?
+    let address: String?
     let thumbnailImageData: Data?
     
     func getThumbnailUIImage() -> UIImage {

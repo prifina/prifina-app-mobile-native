@@ -1,0 +1,40 @@
+query getUserAllContact($uploadedByUid: String) {
+  addressBookApps(where: {uploadedByUid: $uploadedByUid}) {
+    documentInStages{
+      id
+      createdAt
+      updatedAt
+      publishedAt
+      uploadedByUid
+      name
+      bio
+      country
+      mobile
+      workNumber
+      email
+      jobDescription
+      job
+      contactId
+    }
+  }
+}
+
+mutation upsertAndPublishAddressBook($data: AddressBookAppUpsertInput!, $contactId: String!) {
+  upsertAddressBookApp(
+    where: {contactId: $contactId}
+    upsert: $data
+  ) {
+    name
+    stage
+    id
+  }
+  publishAddressBookApp(to: [PUBLISHED], where: {
+    contactId: $contactId
+  }) {
+    documentInStages{
+      name
+      stage
+      id
+    }
+  }
+}
